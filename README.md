@@ -52,7 +52,7 @@ keith-emanzi-portfolio/
 
 ## 🚀 Live Demo
 
-[View Live Website](https://keithemanzi.github.io/keith-emanzi-portfolio)
+[View Live Website](https://keithemanzi.github.io)
 
 ## 📊 Featured Projects
 
@@ -71,12 +71,12 @@ keith-emanzi-portfolio/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/keith-emanzi-portfolio.git
+   git clone https://github.com/keithemanzi/keithemanzi.github.io.git
    ```
 
 2. **Navigate to project folder**:
    ```bash
-   cd keith-emanzi-portfolio
+   cd keithemanzi.github.io
    ```
 
 3. **Open in browser**:
