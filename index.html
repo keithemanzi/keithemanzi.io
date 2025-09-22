@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tutorial Website</title>
+    <script src="https://kit.fontawesome.com/df15460e51.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Ebishushani/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
+        </nav>
+        <div class="header-text">
+            <p> Data Science | Visual Analytics | Machine Learning</p>
+            <h1> Hi, I'm <span>Keith</span><br>Emanzi from Uganda</h1>
+        </div>
+    </div>
+</div>
+<!---------about section--------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+           <div class="about-col-1">
+               <img src="Ebishushani/user.png">
+           </div> 
+           <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+               <p>I cut through data like a scalpel no fluff, no filler. Banking operations taught me the value of clean reports and honest analytics, but code is where things get real. Python’s my go-to: direct, efficient, no nonsense. I build solutions that work, not just ones that look good. This site? It’s me learning by doing, not chasing perfection. I’m here for clarity, results, and insights that actually matter. Problems get solved with precision and a bit of empathy. That’s my approach; analytics that drive decisions, not just dashboards.</p>
+           
+               <div class="tab-titles">
+                   <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                   <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                   <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                   <ul>
+                      <li><span>Data Analysis</span><br>Transforming raw data into actionable insights for business decisions.</li>
+                      <li><span>Dashboards</span><br>Designing interactive dashboards for clear and effective data visualization.</li>
+                      <li><span>Statistical Data Modelling</span><br>Building predictive models to uncover trends and support decision-making.</li>
+                   </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                   <ul>
+                      <li><span>Aug 2023 – Aug 2025: Apprentice, Absa Bank Uganda Limited</span><br>
+                          Rotated through Product and Management Information, then Agent Banking Operations. Delivered reporting for management, analyzed product performance, and streamlined agent data flows. Co-organized analytics bootcamps for coaching, helping colleagues master Excel and data storytelling.
+                      </li>
+                      <li><span>Sept 2021 – Jan 2022: Intern, PostBank Uganda Limited</span><br>
+                          Supported daily banking operations, learned the ropes of compliance and reporting, and got hands-on with data cleaning for regulatory submissions. Built a foundation in financial analytics and teamwork.
+                      </li>
+                   </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                   <ul>
+                      <li><span>Since 2022: Self-Taught Python & Coding</span><br>
+                          Launched a hands-on coding journey—learning Python, building projects, and mastering data science tools through self-driven exploration and online resources.
+                      </li>
+                      <li><span>2019 – 2022: BSc, Uganda Christian University Mukono</span><br>
+                          Specialized in data analysis, statistics, and business intelligence.
+                      </li>
+                      <li><span>2017 – 2018: Naalya Secondary School Bweyogerere (A-Level)</span><br>
+                          Focused on sciences and mathematics, sharpening quantitative skills.
+                      </li>
+                      <li><span>2013 – 2016: Kings College Budo (O-Level)</span><br>
+                          Built a strong academic foundation and developed analytical thinking.
+                      </li>
+                   </ul>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services section----------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Analysis</h2>
+                <p>Transforming raw data into actionable insights for business decisions.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-table-columns"></i>
+                <h2>Dashboards</h2>
+                <p>Designing interactive dashboards for clear and effective data visualization.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-square-binary"></i>
+                <h2>Data Modelling</h2>
+                <p>Building predictive models to uncover trends and support decision-making.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------portfolio----------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Ebishushani/titanicsurvivalprediction.png">
+                <div class="layer">
+                    <h3>Titanic Survival Prediction</h3>
+                    <p>Predicting survival on the Titanic using machine learning techniques.</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Ebishushani/bankclassifier.png">
+                <div class="layer">
+                    <h3>Bank Customer Classification</h3>
+                    <p>Classifying bank customers using machine learning techniques.</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Ebishushani/fraudsystem.png">
+                <div class="layer">
+                    <h3>Fraud Detection System</h3>
+                    <p>Implementing a fraud detection system using machine learning techniques.</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ---------Contact--------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>  emanzikeith@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>  +256 726 486434</p>
+                <p><i class="fa-brands fa-whatsapp"></i> +256 703 378883</p>
+                <div class="social-icons">
+                    <a href="https://www.kaggle.com/keithemanzi"><i class="fa-brands fa-kaggle"></i></a>
+                    <a href="https://github.com/keithemanzi"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/mansa.ek/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form id="contact-form">
+                   <input type="text" id="name" name="name" placeholder="Your Name" required>
+                   <input type="email" id="email" name="email" placeholder="Your Email" required>
+                   <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                   <button type="submit" class="btn btn2">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Keith Emanzi. All Rights Reserved.<br>
+        <span style="font-size:0.9em;color:#888;">Built with code, not buzzwords.</span></p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    var menuBackdrop = document.getElementById("menuBackdrop");
+
+    function openMenu(){
+        sidemenu.style.right = "0";
+        menuBackdrop.classList.add("active");
+    }
+    function closeMenu(){
+        sidemenu.style.right = "-160px";
+        menuBackdrop.classList.remove("active");
+    }
+
+    
+</script>
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const msg = document.getElementById('msg');
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    // Debug output
+    console.log('Form data:', { name, email, message });
+    
+    msg.innerHTML = "Sending message...";
+    msg.style.color = "#61b752";
+    
+    const formData = new FormData();
+    formData.append('Name', name);      // Capital N to match sheet
+    formData.append('Email', email);    // Capital E to match sheet
+    formData.append('Message', message); // Capital M to match sheet
+    
+    fetch('https://script.google.com/macros/s/AKfycbzYJX4jFMj54jVFCAnTqWhH_xfHsD2RSL6xLOGOnw3H2mpInjB6KNLS6geEx8bbQW6pfg/exec', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+      console.log('Server response:', data);
+      if (data.includes('Success')) {
+        msg.innerHTML = "Message sent successfully!";
+        msg.style.color = "#61b752";
+      } else {
+        msg.innerHTML = "Server response: " + data;
+        msg.style.color = "#ff6b6b";
+      }
+      document.getElementById('contact-form').reset();
+      setTimeout(() => msg.innerHTML = "", 5000);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      msg.innerHTML = "Network error: " + error.message;
+      msg.style.color = "#ff6b6b";
+      setTimeout(() => msg.innerHTML = "", 5000);
+    });
+  });
+</script>
+
+</body>
+</html>
